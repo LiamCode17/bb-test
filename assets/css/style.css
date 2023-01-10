@@ -157,6 +157,14 @@ h2 {
     margin-top: 85px;
 }
 
+@media screen and (max-height: 800px) {
+
+    .hero-content img {
+        max-width: 300px;
+        margin-top: 85px;
+    }
+}
+
 .scroll-more {
     animation: bounce 1s infinite;
 }
