@@ -88,7 +88,13 @@ h2 {
 .nav-item:last-child a {
     padding: 8px 25px;
     background-color: #FDCE4B;
+    border: 2px solid #FDCE4B;
     border-radius: 50vh;
+}
+
+.nav-item:last-child a:hover {
+    background-color: transparent;
+    transition: all .3s ease;
 }
 
 .nav-item a {
@@ -231,7 +237,7 @@ h2 {
 
 .service-cards .service-card {
     text-align: center;
-    max-width: 33.33%;
+    width: 33.33%;
     padding: 30px;
     background-color: #FDCE4B;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -246,6 +252,12 @@ h2 {
     color: #333;
 }
 
+.service-card .availability {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
 .service-cards .service-card h3 {
     font-family: 'adventure';
     text-transform: uppercase;
@@ -256,6 +268,40 @@ h2 {
 
 .service-cards .service-card ul li {
     margin-bottom: 15px;
+}
+
+.view-our-rules {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.view-our-rules a {
+    cursor: pointer;
+    text-align: center;
+    background-color: #FDCE4B;
+    display: inline-block;
+    border: 2px solid #FDCE4B;
+    padding: 8px 25px;
+    border-radius: 50vh;
+    font-size: 16px;
+}
+
+.view-our-rules a:hover {
+    background-color: transparent;
+    transition: .3s all ease;
+}
+
+@media screen and (max-width: 768px) {
+    .rules-content ul li {
+        margin-bottom: 10px;
+    }
+
+    .rules-content {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px 30px;
+        height: 100%;
+    }
 }
 
 .gallery-section {
@@ -285,6 +331,16 @@ h2 {
     padding: 5px;
     border: none;
     background-color: #FDCE4B;
+    border: 2px solid #FDCE4B;
+    border-radius: 50vh;
+    cursor: pointer;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+    transition: all .3s ease;
+    background-color: transparent;
+    border: 2px solid #FDCE4B;
 }
 
 .slick-prev {
@@ -391,9 +447,15 @@ form button {
     justify-content: center;
     background-color: #FDCE4B;
     color: #333;
-    border: none;
     border-radius: 50vh;
+    border: 2px solid #FDCE4B;
     margin: 0 auto;
+}
+
+form button:hover {
+    background-color: transparent;
+    transition: .3s all ease;
+    border: 2px solid #FDCE4B;
 }
 
 .map {
@@ -496,6 +558,7 @@ footer p {
         min-width: 300px;
     }
 
+
     .testimonials-container {
         flex-direction: column;
     }
@@ -549,3 +612,51 @@ footer p {
         pointer-events: none;
     }
 }
+
+/* rules page */
+
+.rules-modal {
+    background-color: #FDCE4B;
+    height: 100vh;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-rules {
+    cursor: pointer;
+    background-color: #fff;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vh;
+    margin-bottom: 10px;
+}
+
+.close-rules i {
+    font-size: 20px;
+}
+
+.rules-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.rules-content ul li {
+    margin-bottom: 20px;
+    list-style: initial;
+}
+
+@media screen and (max-width: 576px) {
+    .rules-modal {
+        height: auto;
+        padding: 80px 0px;
+    }
+}
+
+/* /rules page */
