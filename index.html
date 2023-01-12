@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Billy Bob’s Dog Resort is situated at Pypies Square Park in Devil’s Peak – one
+  of the Mother City’s most beloved dog hangouts.We provide a fun, healthy and safe home away from home with all the love, comfort,
+  exercise and stimulation your pooch deserves. Our activities range from exhilarating mountain walks to action packed neighbourhood
+  patrols and play at the park with the local dogs. We also have a garden to relax and 
+  play in, and there are loads of toys, chews, beds, couches and sunny spots to choose from,
+   as well as a cosy fireplace during winter!   ">
     <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script defer src="https://kit.fontawesome.com/9245784e3b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -179,11 +185,11 @@
         <div class="max-width">
             <h2>Get in touch</h2>
             <div class="contact-content">
-                <form action="">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="number" placeholder="Your Number" required>
-                    <textarea name="" placeholder="Your Message..."></textarea>
+                <form action="POST" data-netlify="true">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="number" name="number" placeholder="Your Number" required>
+                    <textarea name="message" placeholder="Your Message..."></textarea>
                     <button>Send</button>
                 </form>
                 <div class="map">
